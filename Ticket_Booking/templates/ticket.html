@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+    {% block content %}
+    <h1>Ticket  information</h1>
+    {% for infor in ticket_info%}
+    <ul> 
+        <li>
+            {{infor.user}}:
+    {{infor.reg_no}}
+    </li>
+</ul>
+    {%endfor%}
+    {%endblock%}

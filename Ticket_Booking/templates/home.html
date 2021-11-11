@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+{% block title%} Home{% endblock%}
+{% block content %}
+{% if user.is_authenticated%}
+ Hi {{user.username}}
+ <p> <a href="{% url 'logout' %} ">log Out</a></p>
+ <a href="ticket/ ">Book a Ticket</a> 
+ <a href="ticket/information/"> view the  Ticket </a>
+ {% else %}
+
+ <p>you are not log in</p>
+ <nav> <ul>
+  <li><a href="{% url 'login'%}"> log in </a></li>
+  <li><a href="accounts/signup/"> signup </a></li>
+  <li><a href="admin/"> log as Admin </a></li>
+  
+</ul>
+</nav>
+
+ {% endif %}
+
+
+
+{% endblock %}

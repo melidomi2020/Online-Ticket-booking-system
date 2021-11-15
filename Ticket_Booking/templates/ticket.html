@@ -1,12 +1,36 @@
 {% extends 'main.html' %}
+{% load static %}
+>
+
+{% block scripts %}
+<script src={% static 'js/main.js' %} defer></script
+
+{% endblock scripts %}
+ 
     {% block content %}
+    projected time :<div id='tt'>{{expected_time}}</div>
+    
+    
     <h1>Ticket  information</h1>
+    projected time :<div id='tt'>{{expected_time}}</div>
+    
     {% for infor in ticket_info%}
     <ul> 
         <li>
-            {{infor.user}}:
+           student Name: {{infor.user}}
+            <div>Ticket no:
     {{infor.reg_no}}
+</div>
+Time Book: <div id='time1'>{{infor.time|date:"Y-m-d H:m:s"}} </div>
     </li>
+Time left: <div id="countDown" > </div>
+    
 </ul>
     {%endfor%}
-    {%endblock%}
+    <div >number of  student on aline:{{waitors_no}}</div>
+    
+    
+    
+
+
+    {%endblock content %}

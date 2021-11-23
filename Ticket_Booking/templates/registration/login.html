@@ -1,10 +1,16 @@
 {% extends 'main.html' %}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
 {% block title%} Login {% endblock%}
 {%block content %}
-    <h2>log in</h2>
+<div class="flex">
+    <h2 >login as a User</h2>
     <form method="post">
         {%csrf_token%}
+        
         {{form.as_p}}
-   <button type="submit">log in</button>
+    
+   <button class="sub" type="submit">login</button>
     </form>
+</div>
 {%endblock%}

@@ -13,7 +13,8 @@ def ticket_detail(request):
          if form.is_valid():
              
             form.save()
-            print("information receive")
+            return redirect('/ticket/information/')
+        
 
      form=ticketForm()   
      return render(request,'ticketdetail.html',{'form':form})

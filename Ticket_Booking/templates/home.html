@@ -1,23 +1,31 @@
 {% extends 'main.html' %}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
 {% block title%} Home{% endblock%}
 {% block content %}
 {% if user.is_authenticated%}
  Hi {{user.username}}
- <p> <a href="{% url 'logout' %} ">log Out</a></p>
- <a href="ticket/ ">Book a Ticket</a> 
- <a href="ticket/information/"> view the  Ticket </a>
+     <div class="logout">
+        <a href="{% url 'logout' %} ">log Out</a>
+        </div>
+         <div class="ticket"> <a href="ticket/ ">Book a Ticket</a>
+           </div>
+               <div class="view"><a href="ticket/information/"> view the  Ticket </a>
+             </div>
+     
  {% else %}
 
  <p>you are not log in</p>
  <nav> <ul>
-  <li><a href="{% url 'login'%}"> log in </a></li>
-  <li><a href="accounts/signup/"> signup </a></li>
-  <li><a href="admin/"> log as Admin </a></li>
+  <div class="login"><a href="{% url 'login'%}"> login  as User</a></div>
+  <div class="signup"><a href="accounts/signup/"> Register </a></div>
+  <div class="admin"><a href="admin/"> login as Admin </a></div>
   
 </ul>
 </nav>
 
  {% endif %}
+   <img class="image" src="{% static 'images/mku.jpg' %}" alt="">
 
 
 

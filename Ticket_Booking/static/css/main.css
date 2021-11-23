@@ -1,0 +1,114 @@
+body,html{
+    height: 100%;
+}
+.con{
+    font-size: larger;
+}
+#tt{
+    
+    font-size: larger;
+}
+.container1{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 50%;
+    height: 95%;
+    font-size: 200%;
+    background-color:blue;
+
+}
+.ticket_detail{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 100%;
+    height: auto;
+    font-size: 200%;
+    background-color: rgb(245, 245, 245)
+
+}
+.sign{
+    position: absolute;
+    top:8%;
+    left: 5%;
+    width:100% ;
+    height: auto;
+    font-size: 130%;
+    background-color: rgb(245, 245, 245)
+}
+.button{
+    background-color: rgba(0, 238, 255, 0.459);
+}
+.flex{
+    position: absolute;
+    background-position-y: center;
+    top: 30%;
+    left: 40%;
+    font-size: 200%;
+    background-color: rgba(0, 0, 255, 0.062);
+
+}
+
+.image{
+    position: absolute;
+    top: 15%;
+    background-position:center ;
+    height: 80%;
+    width: 100%;
+}
+
+.ticket{
+    position:absolute;
+    top: 5%;
+    left: 30%;
+    color:blue;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.logout{
+
+    position:absolute;
+    top: 5%;
+    color: blue;
+    right: 10%;
+    font-size: 200%;
+    
+    
+}
+.login{
+    position:absolute;
+    top: 5%;
+    color: blue;
+    font-size: 200%;
+    right:57% ;
+}
+.view{
+    position:absolute;
+    top: 5%;
+    left: 57%;
+    color:blue;
+    font-size: 200%;
+    
+
+}
+.signup{
+    
+    position:absolute;
+    top: 5%;
+    right: 10%;
+    color: brown;
+    font-size: 200%;
+    
+}
+
+.admin{
+    position:absolute;
+    top: 5%;
+    left: 57%;
+    color: aqua;
+    font-size: 200%;
+    
+
+}
